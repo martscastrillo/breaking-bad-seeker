@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 2rem;
+  height: 100vh; }
+
+.page__header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem; }
+
+.page__footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
+  color: #999; }
+
+/*# sourceMappingURL=main.css.map */
