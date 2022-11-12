@@ -5,17 +5,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Breaking Bad</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css" />
 
 </head>
+<header>
+  <div class="headerbox">
+
+  </div>
+
+</header>
 
 <body>
-  <div class="page">
-    <include src="./partials/header.html"></include>
-    <include src="./partials/main.html"></include>
-    <include src="./partials/footer.html"></include>
+  <form class="searchbox js_form">
+    <input class="inputSearch js_search" type="text" name="search" id="search">
+    <button class="btn">Search</button>
+  </form>
+  <div class="bigbox">
+    <div>
+      <h2 class="title">Favorites ❤︎ </h2>
+      <ul class="listfav js-favorite-list">
+        <li>
+          <article class="js_article card" id="${character.char_id}">
+            <span class="photobox">
+              <img class="card_img"
+                src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
+                alt="characterImage">
+            </span>
+            <div class="text">
+              <h3 class="card_name">${character.name}</h3>
+              <h3 class="card_status">${character.status}</h3>
+            </div>
+          </article>
+        </li>
+    </div>
+    <div class="">
+      <section class="data js-data">
+        <h1 class="title">Characters ❤︎ </h1>
+        <ul class="list js_character_list">
+
+        </ul>
+      </section>
+    </div>
+
   </div>
+
+
+  <!--    <include src="./partials/header.html"></include>
+    <include src="./partials/main.html"></include>
+    <include src="./partials/footer.html"></include> -->
+
   <script src="./assets/js/main.js"></script>
 </body>
 
