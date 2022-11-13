@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breaking Bad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css" />
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+</head>
+<header>
+  <div class="headerbox">
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+  </div>
 
-          </li>
-        </ul>
-      </main>
+</header>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
+  <form class="searchbox js_form">
+    <input class="inputSearch js_search" type="text" name="search" id="search">
+    <button class="searchbtn js_btn">Search</button>
+  </form>
+  <span class="resetbutton">
+    <button class="resetbutton__btn js_reset_btn">RESET</button>
+  </span>
 
-        </small>
-      </footer>
+  <div class="superbigbox">
 
+    <div class="superbigbox__fav">
+      <section class="data js-data">
+        <h2 class="title titlefav">Favorites ❤︎ </h2>
+        <ul class="listfav js-favorite-list">
+      </section>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+    <div class="superbigbox__ch">
+      <section class="data js-data">
+        <h1 class="title titlech">Characters ❤︎ </h1>
+        <ul class="list js_character_list">
+
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+  </div>
+  <!--    <header class="page__header">
+
+    </header>
+    <main class="page__main">
+
+    </main>
+    <footer class="page__footer">
+
+    </footer> -->
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

@@ -24,7 +24,7 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 body {
-  background-color: white;
+  background-color: #ffd29c;
   margin: 0;
   padding: 0; }
 
@@ -41,12 +41,15 @@ body {
   background-size: cover; }
 
 .title {
-  color: #ba7a03;
+  text-transform: uppercase;
+  color: white;
   font-size: medium;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background-color: #ad4601; }
 
 .searchbox {
+  border-radius: 5px;
   position: absolute;
   top: 400px;
   z-index: 100;
@@ -62,20 +65,22 @@ body {
 
 .inputSearch {
   width: 85vw;
-  border: solid 1px #ddbd83; }
+  border: solid 1px #ad4601; }
 
-.btn {
+.searchbtn {
   padding: 5px 10px 5px 10px;
   color: white;
-  background-color: #ddbd83;
+  background-color: #ad4601;
   display: inline-block;
   border: 0;
   border-radius: 10px; }
 
-.bigbox {
-  margin-top: 80px;
+.superbigbox {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: row;
+  gap: 70px 100px;
+  margin-top: 90px;
+  justify-content: center; }
 
 .list {
   list-style: none;
@@ -83,11 +88,28 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 30px; }
 
-.listfav {
-  list-style: none;
+.resetbutton {
+  transform: translateY(45px);
+  height: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; }
+  .resetbutton__btn {
+    text-transform: uppercase;
+    font-size: medium;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-weight: 700;
+    background-color: #ad4601;
+    display: inline-block;
+    border: 0;
+    border-radius: 10px; }
+
+.listfav {
+  width: 420px;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
   gap: 30px; }
 
 .card {
@@ -102,10 +124,13 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); }
 
 .selected {
-  background-color: #ddbd83; }
+  background-color: #f8b425; }
 
 .photobox {
+  border-radius: 5px;
   overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
   height: 220px;
   width: 150px;
   align-self: center; }
@@ -129,5 +154,8 @@ body {
 
 .charactesrList {
   height: 300px; }
+
+.collapsed {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

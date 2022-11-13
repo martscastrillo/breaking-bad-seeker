@@ -147,5 +147,3 @@ if (savedFavorites !== null) {
   favoritesCharacters = savedFavorites;
   renderfavoriteCh();
 }
-
-//# sourceMappingURL=main.js.map

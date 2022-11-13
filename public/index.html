@@ -23,29 +23,23 @@
 <body>
   <form class="searchbox js_form">
     <input class="inputSearch js_search" type="text" name="search" id="search">
-    <button class="btn">Search</button>
+    <button class="searchbtn js_btn">Search</button>
   </form>
-  <div class="bigbox">
-    <div>
-      <h2 class="title">Favorites ❤︎ </h2>
-      <ul class="listfav js-favorite-list">
-        <li>
-          <article class="js_article card" id="${character.char_id}">
-            <span class="photobox">
-              <img class="card_img"
-                src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-                alt="characterImage">
-            </span>
-            <div class="text">
-              <h3 class="card_name">${character.name}</h3>
-              <h3 class="card_status">${character.status}</h3>
-            </div>
-          </article>
-        </li>
-    </div>
-    <div class="">
+  <span class="resetbutton">
+    <button class="resetbutton__btn js_reset_btn">RESET</button>
+  </span>
+
+  <div class="superbigbox">
+
+    <div class="superbigbox__fav">
       <section class="data js-data">
-        <h1 class="title">Characters ❤︎ </h1>
+        <h2 class="title titlefav">Favorites ❤︎ </h2>
+        <ul class="listfav js-favorite-list">
+      </section>
+    </div>
+    <div class="superbigbox__ch">
+      <section class="data js-data">
+        <h1 class="title titlech">Characters ❤︎ </h1>
         <ul class="list js_character_list">
 
         </ul>
@@ -54,7 +48,7 @@
 
   </div>
 
-
+  </div>
   <!--    <header class="page__header">
 
     </header>
