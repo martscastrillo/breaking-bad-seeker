@@ -6,7 +6,7 @@
 body {
   padding: 2rem;
   height: 100vh;
-  background-color: #b4e5af;
+  background-color: #1c2d1b;
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,7 +32,7 @@ body {
     margin: 0px 30px 30px 30px;
     height: 60px;
     background-color: white;
-    border: 2px solid #003a12;
+    border: 2px solid #336c2a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ body {
       border: transparent; }
     .formbox__searchbox .inputSearch {
       width: 400px;
-      border: solid 1px #003a12; }
+      border: solid 1px #336c2a; }
 
 .superbigbox {
   display: flex;
@@ -56,7 +56,7 @@ body {
     font-size: medium;
     text-align: center;
     margin-bottom: 30px;
-    background-color: #003a12; }
+    background-color: #336c2a; }
 
 .list {
   list-style: none;
@@ -139,7 +139,7 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
     .resetbutton__btn:hover {
-      background-color: #003a12;
+      background-color: #336c2a;
       transform: scale(1.1, 1.1);
       transition: transform 2s; }
     .resetbutton__btn:not(:hover) {
@@ -148,7 +148,7 @@ body {
 .searchbtn {
   padding: 5px 10px 5px 10px;
   color: white;
-  background-color: #003a12;
+  background-color: #336c2a;
   border: 0;
   border-radius: 10px;
   margin-left: 13px; }
@@ -163,7 +163,7 @@ body {
   display: none; }
 
 .selected {
-  background-color: #1d3a2a;
+  background-color: #248d55;
   color: white; }
 
 :root {
