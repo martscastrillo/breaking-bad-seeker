@@ -13,51 +13,59 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
 
 </head>
-<header>
-  <div class="headerbox">
 
-  </div>
-
-</header>
 
 <body>
-  <form class="searchbox js_form">
-    <input class="inputSearch js_search" type="text" name="search" id="search">
-    <button class="searchbtn js_btn">Search</button>
-  </form>
-  <span class="resetbutton">
-    <button class="resetbutton__btn js_reset_btn">RESET</button>
-  </span>
+  <header>
+      <div class="headerbox">
 
-  <div class="superbigbox">
+      </div>
 
-    <div class="superbigbox__fav">
-      <section class="data js-data">
-        <h2 class="title titlefav">Favorites ❤︎ </h2>
-        <ul class="listfav js-favorite-list">
-      </section>
-    </div>
-    <div class="superbigbox__ch">
-      <section class="data js-data">
-        <h1 class="title titlech">Characters ❤︎ </h1>
-        <ul class="list js_character_list">
+  </header>
+  <div class="formbox">
+      <form class="formbox__searchbox js_form">
+          <fieldset class="fieldset">
+              <input class="inputSearch js_search" type="text" name="search" id="search" placeholder=" Ej: Walter White">
+              <select name="status" id="status" class="js_status statusselect">
+                  <option value="All">All</option>
+                  <option value="Alive">Alive</option>
+                  <option value="Presumed dead">Presumed dead</option>
+                  <option value="Deceased">Deceased</option>
 
-        </ul>
-      </section>
-    </div>
-
+              </select>
+              <button class="searchbtn js_btn">Search</button>
+              <p class="js_search_message searchmessage"> </p>
+          </fieldset>
+      </form>
+      <span class="resetbutton">
+          <button class="resetbutton__btn js_reset_btn">RESET</button>
+      </span>
   </div>
+  <main class="page__main">
+      <div class="superbigbox">
+          <div>
+              <section class="data js-data">
+                  <h2 class="superbigbox__title titlefav">Favorites ❤︎</h2>
+                  <ul class="list__fav js-favorite-list">
+              </section>
+          </div>
+          <div>
+              <section class="data js-data">
+                  <h1 class="superbigbox__title titlech">Characters</h1>
+                  <ul class="list js_character_list">
+                  </ul>
+              </section>
+          </div>
 
-  </div>
-  <!--    <header class="page__header">
+      </div>
+  </main>
 
-    </header>
-    <main class="page__main">
 
-    </main>
-    <footer class="page__footer">
-
-    </footer> -->
+  <footer class="page__footer">
+      <p class="footer">Breaking Bad is regarded as one of the greates television series of all time, and with 16
+          Primetime Emmy Awards
+          &copy Adalab 2022</p>
+  </footer>
 
   <script src="./assets/js/main.js"></script>
 </body>
