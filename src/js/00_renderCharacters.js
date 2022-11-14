@@ -1,3 +1,39 @@
+function handleClick(event) {
+  //evento para concretamente que el currentTarget sobre donde está el evento, 
+  //en nuestro caso en cada tarjeta
+  event.currentTarget.classList.toggle('selected');
+  //busca en el array aquel objeto que tiene el mismo char_id  que el id parseado del current Target
+  const selectedCh = allCharacters.find((charac) => charac.char_id === parseInt(event.currentTarget.id));
+
+  //busqueda para saber la posicion en favoritos si la tarjeta está en favoritos
+  const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
+  //si la busqueda es -1 es decir que no lo encuentra, entonces lo añade 
+  if (characterInFavsIndex === -1) {
+    //rellena el array de favoritos con lo qhe ha encontrado
+    favoritesCharacters.push(selectedCh);
+  }
+  // si la busqueda da un index es que si lo encuentra y entonces, debe quitarlo
+  else {
+    favoritesCharacters.splice(characterInFavsIndex, 1);
+  }
+  localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
+  renderfavoriteCh();
+
+}
+/* function handleClickx (event){
+  event.preventDefault();
+  console.log('entra');
+  const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
+  console.log(characterInFavsIndex);
+  console.log(event.currentTarget.id);
+  favoritesCharacters.splice(characterInFavsIndex, 1);
+  console.log(favoritesCharacters);
+  localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
+  renderAllCharacters(allCharacters);
+  renderfavoriteCh();
+  
+} */
+
 function renderOneCharacter(character) {
     let classSelected = '';
    /*  let xFavorite = ''; */
@@ -8,18 +44,17 @@ function renderOneCharacter(character) {
     //si la busqueda es -1 es decir que no lo encuentra, entonces lo añade 
     if (characterInFavsIndex === -1) {
         classSelected = '';
- /*        xFavorite = ''; */
+      /*   xFavorite = ''; */
     }
     // si la busqueda da un index es que si lo encuentra y entonces, debe quitarlo
     else {
         classSelected = 'selected';
-  /*       xFavorite =  `<p class="xfavorite js_x_favorite">X</p>`; */
+      /*   xFavorite =  `<p class="xfavorite js_x_favorite" id="${character.char_id}">X</p>`; */
     }
     // atributo gancho char_id para poder trabajar luego con el currentTarget 
     let html = `<li>
       <article class="js_article ${classSelected} card" id="${character.char_id}"> 
-
-      
+   
       <span class="photobox">
         <img class="card_img"
           src="${character.img}"
@@ -46,7 +81,7 @@ function renderAllCharacters(characters) {
         html += renderOneCharacter(eachCharacter);
     }
     characterList.innerHTML = html;
-
+   
     addCharacterListeners();
 }
 

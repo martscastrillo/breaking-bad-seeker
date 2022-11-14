@@ -12,13 +12,19 @@ body {
   justify-content: space-evenly;
   margin-bottom: 3rem; }
 
-.page__footer {
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100vw;
-  padding: 1rem;
-  color: #999; }
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: wheat;
+  text-align: center;
+  background-color: #e9b200; }
 
 :root {
   font-family: "Montserrat", sans-serif; }
@@ -58,21 +64,26 @@ body {
   margin-top: -16px;
   margin-left: 155px; }
 
-.searchbox {
+.formbox {
   transform: translateY(-30px);
+  display: flex;
+  justify-content: center; }
+
+.searchbox {
   align-self: center;
   border-radius: 5px;
-  width: 800px;
+  width: 650px;
   top: 390px;
   z-index: 100;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin: 0px 30px 30px 30px;
   height: 60px;
   background-color: white;
+  border: 2px solid #ad4601;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
   padding: 20px; }
 
 .fieldset {
@@ -91,7 +102,6 @@ body {
   padding: 5px 10px 5px 10px;
   color: white;
   background-color: #ad4601;
-  display: inline-block;
   border: 0;
   border-radius: 10px; }
 
@@ -99,8 +109,8 @@ body {
   display: flex;
   flex-direction: row;
   gap: 70px 100px;
-  margin-top: 90px;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 100px; }
 
 .list {
   list-style: none;
@@ -110,7 +120,6 @@ body {
   width: 1100px; }
 
 .resetbutton {
-  transform: translateY(20px);
   height: 60px;
   display: flex;
   justify-content: center;
@@ -119,11 +128,12 @@ body {
     text-transform: uppercase;
     font-size: medium;
     padding: 10px 10px 10px 10px;
+    border: 2px solid white;
     color: white;
     font-weight: 700;
-    background-color: #ad4601;
+    background-color: #e9b200;
     display: inline-block;
-    border: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
 
 .listfav {

@@ -13,55 +13,15 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
 
 </head>
-<header>
-  <div class="headerbox">
 
-  </div>
-
-</header>
 
 <body>
-  <form class="searchbox js_form">
-    <fieldset class="fieldset">
-      <input class="inputSearch js_search" type="text" name="search" id="search" placeholder="Ej: Walter White">
-      <select name="" id="" class="js_status statusselect" required>
-        <option value="All">All</option>
-        <option value="Alive">Alive</option>
-        <option value="Presumed dead">Presumed dead</option>
-        <option value="Deceased">Deceased</option>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/form.html"></include>
+  <include src="./partials/main.html"></include>
 
-      </select>
-      <button class="searchbtn js_btn">Search</button>
-      <p class="js_search_message searchmessage"> </p>
-    </fieldset>
-  </form>
-  <span class="resetbutton">
-    <button class="resetbutton__btn js_reset_btn">RESET</button>
-  </span>
 
-  <div class="superbigbox">
-
-    <div class="superbigbox__fav">
-      <section class="data js-data">
-        <h2 class="title titlefav">Favorites ❤︎ </h2>
-        <ul class="listfav js-favorite-list">
-      </section>
-    </div>
-    <div class="superbigbox__ch">
-      <section class="data js-data">
-        <h1 class="title titlech">Characters ❤︎ </h1>
-        <ul class="list js_character_list">
-
-        </ul>
-      </section>
-    </div>
-
-  </div>
-
-  </div>
-  <!--    <include src="./partials/header.html"></include>
-    <include src="./partials/main.html"></include>
-    <include src="./partials/footer.html"></include> -->
+  <include src="./partials/footer.html"></include>
 
   <script src="./assets/js/main.js"></script>
 </body>

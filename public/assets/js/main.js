@@ -9,11 +9,32 @@ const searchStatus = document.querySelector('.js_status');
 const form = document.querySelector('.js_form');
 const resetBtn = document.querySelector('.js_reset_btn');
 const searchMessage = document.querySelector('.js_search_message');
-const xfavorite = document.querySelector('.js_x_favorite');
+
 //Variables
 
 let allCharacters = [];
 let favoritesCharacters = [];
+
+
+
+//Eventos
+
+
+/* searchInput.addEventListener('input', () => {
+  const userSearch = searchInput.value;
+  searchMessage.innerHTML = '';
+  if (userSearch === '') {
+    searchMessage.innerHTML = 'No ha especificado ningún parámetro de búsqueda';
+  }
+  else{
+    searchMessage.innerHTML = '';
+  }
+}) */
+
+
+//código que que ejecuta al inicio de carga de la pagina
+
+
 
 
 function handleClick(event) {
@@ -38,25 +59,19 @@ function handleClick(event) {
   renderfavoriteCh();
 
 }
-//Eventos
-
-
-/* searchInput.addEventListener('input', () => {
-  const userSearch = searchInput.value;
-  searchMessage.innerHTML = '';
-  if (userSearch === '') {
-    searchMessage.innerHTML = 'No ha especificado ningún parámetro de búsqueda';
-  }
-  else{
-    searchMessage.innerHTML = '';
-  }
-}) */
-
-
-//código que que ejecuta al inicio de carga de la pagina
-
-
-
+/* function handleClickx (event){
+  event.preventDefault();
+  console.log('entra');
+  const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
+  console.log(characterInFavsIndex);
+  console.log(event.currentTarget.id);
+  favoritesCharacters.splice(characterInFavsIndex, 1);
+  console.log(favoritesCharacters);
+  localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
+  renderAllCharacters(allCharacters);
+  renderfavoriteCh();
+  
+} */
 
 function renderOneCharacter(character) {
     let classSelected = '';
@@ -68,18 +83,17 @@ function renderOneCharacter(character) {
     //si la busqueda es -1 es decir que no lo encuentra, entonces lo añade 
     if (characterInFavsIndex === -1) {
         classSelected = '';
- /*        xFavorite = ''; */
+      /*   xFavorite = ''; */
     }
     // si la busqueda da un index es que si lo encuentra y entonces, debe quitarlo
     else {
         classSelected = 'selected';
-  /*       xFavorite =  `<p class="xfavorite js_x_favorite">X</p>`; */
+      /*   xFavorite =  `<p class="xfavorite js_x_favorite" id="${character.char_id}">X</p>`; */
     }
     // atributo gancho char_id para poder trabajar luego con el currentTarget 
     let html = `<li>
       <article class="js_article ${classSelected} card" id="${character.char_id}"> 
-
-      
+   
       <span class="photobox">
         <img class="card_img"
           src="${character.img}"
@@ -106,7 +120,7 @@ function renderAllCharacters(characters) {
         html += renderOneCharacter(eachCharacter);
     }
     characterList.innerHTML = html;
-
+   
     addCharacterListeners();
 }
 
@@ -120,11 +134,16 @@ fetch('https://breakingbadapi.com/api/characters')
   });
 
 function renderfavoriteCh() {
+  
     let html = '';
     for (const eachCharacter of favoritesCharacters) {
         html += renderOneCharacter(eachCharacter);
     }
     favoriteList.innerHTML = html;
+  /*   const xfavorite = document.querySelectorAll('.js_x_favorite');
+    for (const onex of xfavorite) {
+      onex.addEventListener('click', handleClickx);
+    } */
 }
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -144,7 +163,6 @@ searchBtn.addEventListener('click', () => {
 
     //variable para meter los personajes que coincidan con la busqueda
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
-
     //pinta los personajes filtrados
     renderAllCharacters(filteredCharacters);
     searchMessage.innerHTML = '';
@@ -182,8 +200,5 @@ resetBtn.addEventListener("click", (event) => {
   renderAllCharacters(allCharacters);
   searchInput.value = '';
 })
-/* xfavorite.addEventListener("click", (event) => {
-  console.log(event.target);
-  favoritesCharacters.splice(xfavorite, 1);
-}) */
+
 //# sourceMappingURL=main.js.map

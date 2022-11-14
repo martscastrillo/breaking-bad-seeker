@@ -46,21 +46,27 @@ body {
 	margin-top: -16px;
 	margin-left: 155px;
 }
-.searchbox {
+.formbox{
 	transform: translateY(-30px);
+	display: flex;
+	justify-content: center;
+}
+.searchbox {
+	
 	align-self: center;
 	border-radius: 5px;
-	width:800px;
+	width:650px;
     top:390px;
     z-index: 100;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 	margin: 0px 30px 30px 30px;
 	height: 60px;
 	background-color: white;
+	border: 2px solid #ad4601;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: center;
-	gap: 50px;
+	align-items: center;
 	padding: 20px;
 }
 .fieldset{
@@ -75,11 +81,11 @@ body {
 	width: 400px;
 	border: solid 1px #ad4601;
 }
+
 .searchbtn {
 	padding: 5px 10px 5px 10px;
 	color: white;
 	background-color:#ad4601;
-	display: inline-block;
 	border: 0;
 	border-radius: 10px;
 }
@@ -87,10 +93,10 @@ body {
 	display: flex;
 	flex-direction: row;
 	gap: 70px 100px;
-	margin-top:  90px;
+
 	justify-content:center;
 
-
+	margin-bottom: 100px;
 }
 .list {
 	list-style: none;
@@ -102,21 +108,22 @@ body {
 
 }
 .resetbutton{
-	transform: translateY(20px);
+
 	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	&__btn{
 		text-transform: uppercase;
-		
 		font-size:medium;
 		padding: 10px 10px 10px 10px;
+		border: 2px solid rgb(255, 255, 255);
 	color: white;
 	font-weight: 700;
-	background-color:#ad4601;
+	background-color: #e9b200;
+
 	display: inline-block;
-	border: 0;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 	}	
 }

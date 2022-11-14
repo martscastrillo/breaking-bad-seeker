@@ -7,7 +7,3 @@ resetBtn.addEventListener("click", (event) => {
   renderAllCharacters(allCharacters);
   searchInput.value = '';
 })
-/* xfavorite.addEventListener("click", (event) => {
-  console.log(event.target);
-  favoritesCharacters.splice(xfavorite, 1);
-}) */
