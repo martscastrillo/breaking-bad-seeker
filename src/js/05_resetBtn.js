@@ -7,3 +7,4 @@ resetBtn.addEventListener("click", (event) => {
   renderAllCharacters(allCharacters);
   searchInput.value = '';
 })
+

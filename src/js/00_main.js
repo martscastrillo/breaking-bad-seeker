@@ -17,22 +17,4 @@ let favoritesCharacters = [];
 
 
 
-//Eventos
-
-
-/* searchInput.addEventListener('input', () => {
-  const userSearch = searchInput.value;
-  searchMessage.innerHTML = '';
-  if (userSearch === '') {
-    searchMessage.innerHTML = 'No ha especificado ningún parámetro de búsqueda';
-  }
-  else{
-    searchMessage.innerHTML = '';
-  }
-}) */
-
-
-//código que que ejecuta al inicio de carga de la pagina
-
-
 

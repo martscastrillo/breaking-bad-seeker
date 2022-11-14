@@ -39,7 +39,7 @@ body {
 	
 	}
 .xfavorite{
-	color: white;
+	color: #ad4601;
 	font-weight: 600;
 	font-size: small;
 	position: absolute;
@@ -148,6 +148,9 @@ body {
 
 .selected {
 	background-color: #f8b425;
+}
+.selectedfav{
+	background-color: #f3c869;
 }
 .photobox {
 	border-radius: 5px;
