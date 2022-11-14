@@ -5,16 +5,104 @@
 
 body {
   padding: 2rem;
-  height: 100vh; }
-
-.page__header {
+  height: 100vh;
+  background-color: #fee1a2;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem; }
+  flex-direction: column; }
+
+.headerbox {
+  height: 420px;
+  background-image: url("../images/backimage.jpeg");
+  background-position: center;
+  background-size: cover; }
+
+.formbox {
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: center; }
+  .formbox__searchbox {
+    align-self: center;
+    border-radius: 5px;
+    width: 650px;
+    top: 390px;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 0px 30px 30px 30px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #ad4601;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
+    .formbox__searchbox .fieldset {
+      border: transparent; }
+    .formbox__searchbox .inputSearch {
+      width: 400px;
+      border: solid 1px #ad4601; }
+
+.superbigbox {
+  display: flex;
+  flex-direction: row;
+  gap: 70px 100px;
+  justify-content: center;
+  margin-bottom: 100px; }
+  .superbigbox__title {
+    text-transform: uppercase;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #ad4601; }
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  width: 1100px; }
+  .list__fav {
+    width: 420px;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 30px; }
+
+.card {
+  padding: 20px;
+  background-color: #f5eeda;
+  border-radius: 5px;
+  width: 190px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); }
+  .card__photobox {
+    border-radius: 5px;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 220px;
+    width: 150px;
+    align-self: center; }
+  .card__name {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center; }
+  .card__status {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center; }
+  .card__img {
+    align-self: center;
+    height: 100%; }
 
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100vw;
   height: 30px;
@@ -26,36 +114,6 @@ body {
   text-align: center;
   background-color: #e9b200; }
 
-:root {
-  font-family: "Montserrat", sans-serif; }
-
-body {
-  background-color: #ffd29c;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; }
-
-.headerbox {
-  width: 100vw;
-  height: 420px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../images/backimage.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.title {
-  text-transform: uppercase;
-  color: white;
-  font-size: medium;
-  text-align: center;
-  margin-bottom: 30px;
-  background-color: #ad4601; }
-
 .xfavorite {
   color: white;
   font-weight: 600;
@@ -63,61 +121,6 @@ body {
   position: absolute;
   margin-top: -16px;
   margin-left: 155px; }
-
-.formbox {
-  transform: translateY(-30px);
-  display: flex;
-  justify-content: center; }
-
-.searchbox {
-  align-self: center;
-  border-radius: 5px;
-  width: 650px;
-  top: 390px;
-  z-index: 100;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin: 0px 30px 30px 30px;
-  height: 60px;
-  background-color: white;
-  border: 2px solid #ad4601;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; }
-
-.fieldset {
-  border: transparent; }
-
-.searchmessage {
-  position: absolute;
-  font-size: 12px;
-  color: red; }
-
-.inputSearch {
-  width: 400px;
-  border: solid 1px #ad4601; }
-
-.searchbtn {
-  padding: 5px 10px 5px 10px;
-  color: white;
-  background-color: #ad4601;
-  border: 0;
-  border-radius: 10px; }
-
-.superbigbox {
-  display: flex;
-  flex-direction: row;
-  gap: 70px 100px;
-  justify-content: center;
-  margin-bottom: 100px; }
-
-.list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  width: 1100px; }
 
 .resetbutton {
   height: 60px;
@@ -131,62 +134,25 @@ body {
     border: 2px solid white;
     color: white;
     font-weight: 700;
-    background-color: #e9b200;
+    background-color: #a98204;
     display: inline-block;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
 
-.listfav {
-  width: 420px;
-  list-style: none;
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  gap: 30px; }
-
-.card {
-  padding: 20px;
-  background-color: #f5eeda;
-  border-radius: 5px;
-  width: 190px;
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); }
-
-.selected {
-  background-color: #f8b425; }
-
-.photobox {
-  border-radius: 5px;
-  overflow: hidden;
-  -o-object-fit: cover;
-  object-fit: cover;
-  height: 220px;
-  width: 150px;
-  align-self: center; }
-
-.card_name {
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center; }
-
-.card_status {
-  font-size: 12px;
-  font-weight: 300;
-  text-align: center; }
-
-.favoritesList {
-  height: 300px; }
-
-.card_img {
-  align-self: center;
-  height: 100%; }
-
-.charactesrList {
-  height: 300px; }
+.searchbtn {
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: #ad4601;
+  border: 0;
+  border-radius: 10px; }
 
 .collapsed {
   display: none; }
+
+.selected {
+  background-color: #a98204; }
+
+:root {
+  font-family: "Montserrat", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

@@ -94,14 +94,14 @@ function renderOneCharacter(character) {
     let html = `<li>
       <article class="js_article ${classSelected} card" id="${character.char_id}"> 
    
-      <span class="photobox">
-        <img class="card_img"
+      <span class="card__photobox">
+        <img class="card__img"
           src="${character.img}"
           alt="characterImage">
           </span>
           <div class ="text">
-            <h3 class="card_name">${character.name}</h3>
-            <h3 class="card_status">${character.status}</h3>
+            <h3 class="card__name">${character.name}</h3>
+            <h3 class="card__status">${character.status}</h3>
           </div>
       </article>
       </li>`;
