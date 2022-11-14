@@ -22,8 +22,18 @@
 
 <body>
   <form class="searchbox js_form">
-    <input class="inputSearch js_search" type="text" name="search" id="search">
-    <button class="searchbtn js_btn">Search</button>
+    <fieldset class="fieldset">
+      <input class="inputSearch js_search" type="text" name="search" id="search" placeholder="Ej: Walter White">
+      <select name="" id="" class="js_status statusselect" required>
+        <option value="All">All</option>
+        <option value="Alive">Alive</option>
+        <option value="Presumed dead">Presumed dead</option>
+        <option value="Deceased">Deceased</option>
+
+      </select>
+      <button class="searchbtn js_btn">Search</button>
+      <p class="js_search_message searchmessage"> </p>
+    </fieldset>
   </form>
   <span class="resetbutton">
     <button class="resetbutton__btn js_reset_btn">RESET</button>

@@ -22,7 +22,7 @@ Con este comando se podrá abrir la web del mismo modo que lo haría el Live Ser
 
 El proyecto es un buscador de personajes de la Serie Breaking Bad, está preparado para buscar mediante la barra de búsqueda, para de ese modo filtrar, después de haber filtrado el personaje que buscas puedes hacer click sobre el y se almacenará en el listado de favoritos, si haces click en él de nuevo lo eliminarás de la lista de favoritos.
 
-Puedes añadir todos los favoritos que quieras, y tantas veces como quieras, así como eliminarlos. ¡Peeeeeero un momento! Para hacer tu vida más sencilla a la hora de eliminar los favoritos hemos incorporado un botón de RESET donde se borran todos los favoritos que tienes en tu listado.
+Puedes añadir todos los favoritos que quieras, y tantas veces como quieras, así como eliminarlos. ¡Peeeeeero un momento! Para hacer tu vida más sencilla a la hora de eliminar los favoritos hemos incorporado un botón de RESET donde se borran todos los favoritos que tienes en tu listado. incluso la búsqueda que hayas escrito.
 
 ## ¿Cúal ha sido el enfoque?
 
@@ -31,3 +31,5 @@ El proyecto es una web donde mediante una peticion a un servidor obtenemos la in
 El proyecto gira en torno a dos arrays que van situados en dos listas, la lista de todos los personajes, y la lista de favoritos, de ese modo, a lo largo de todo el proyeto, mediante funciones, metodos funcionales de arrats, condicionales y bucles hacemos que funcione lo que necesitamos.
 
 El proyecto está preparado para ser eficiente con las interacciones de JS y con un mínimo de CSS, ya que en este caso no es lo importante para demostrar los conocimientos.
+
+Tenemos el buscador que localiza los personajes por nombre

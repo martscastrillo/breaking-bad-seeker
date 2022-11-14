@@ -11,6 +11,8 @@ body {
 	background-color: rgb(255, 210, 156);
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 .headerbox{
     width: 100vw;
@@ -36,25 +38,41 @@ body {
 		background-color:#ad4601;
 	
 	}
-
-
+.xfavorite{
+	color: white;
+	font-weight: 600;
+	font-size: small;
+	position: absolute;
+	margin-top: -16px;
+	margin-left: 155px;
+}
 .searchbox {
+	transform: translateY(-30px);
+	align-self: center;
 	border-radius: 5px;
-    position: absolute; 
-    top:400px;
+	width:800px;
+    top:390px;
     z-index: 100;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 	margin: 0px 30px 30px 30px;
-	height: 40px;
+	height: 60px;
 	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	gap: 50px;
 	padding: 20px;
 }
+.fieldset{
+	border: transparent;
+}
+.searchmessage{
+	position: absolute;
+	font-size: 12px;
+	color: red;
+}
 .inputSearch {
-	width: 85vw;
+	width: 400px;
 	border: solid 1px #ad4601;
 }
 .searchbtn {
@@ -79,11 +97,12 @@ body {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 30px;
+	width: 1100px;
 
 
 }
 .resetbutton{
-	transform: translateY(45px);
+	transform: translateY(20px);
 	height: 60px;
 	display: flex;
 	justify-content: center;
@@ -95,7 +114,6 @@ body {
 		padding: 10px 10px 10px 10px;
 	color: white;
 	font-weight: 700;
-
 	background-color:#ad4601;
 	display: inline-block;
 	border: 0;
@@ -111,7 +129,7 @@ body {
 }
 .card {
 	padding: 20px;
-	background-color: white;
+	background-color: rgb(245, 238, 218);
 	border-radius: 5px;
 	width: 190px;
 	height: 320px;
