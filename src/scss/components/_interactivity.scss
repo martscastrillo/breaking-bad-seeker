@@ -7,7 +7,6 @@
 	margin-left: 155px;
 }
 .resetbutton {
-
 	height: 60px;
 	display: flex;
 	justify-content: center;
@@ -20,11 +19,18 @@
 		border: 2px solid rgb(255, 255, 255);
 		color: white;
 		font-weight: 700;
-		background-color: $color-selected-card;
-
+		background-color: $color-footer;
 		display: inline-block;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
+		&:hover {
+			background-color:$color-secondary;
+			transform: scale(1.1, 1.1);
+			transition: transform 2s;
+		  }
+		  &:not(:hover) {
+			transition: transform 2s;
+		  }
 	}
 }
 .searchbtn {
@@ -33,10 +39,20 @@
 	background-color: $color-secondary;
 	border: 0;
 	border-radius: 10px;
+	margin-left: 13px;
+	&:hover {
+		background-color:$color-footer;
+		transform: scale(1.1, 1.1);
+		transition: transform 2s;
+	  }
+	  &:not(:hover) {
+		transition: transform 2s;
+	  }
 }
 .collapsed {
 	display: none;
 }
 .selected {
 	background-color: $color-selected-card;
+	color: white;
 }

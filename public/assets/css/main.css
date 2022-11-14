@@ -6,7 +6,7 @@
 body {
   padding: 2rem;
   height: 100vh;
-  background-color: #fee1a2;
+  background-color: #b4e5af;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +14,7 @@ body {
 
 .headerbox {
   height: 420px;
-  background-image: url("../images/backimage.jpeg");
+  background-image: url("../images/backimage.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -32,7 +32,7 @@ body {
     margin: 0px 30px 30px 30px;
     height: 60px;
     background-color: white;
-    border: 2px solid #ad4601;
+    border: 2px solid #003a12;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ body {
       border: transparent; }
     .formbox__searchbox .inputSearch {
       width: 400px;
-      border: solid 1px #ad4601; }
+      border: solid 1px #003a12; }
 
 .superbigbox {
   display: flex;
@@ -56,7 +56,7 @@ body {
     font-size: medium;
     text-align: center;
     margin-bottom: 30px;
-    background-color: #ad4601; }
+    background-color: #003a12; }
 
 .list {
   list-style: none;
@@ -73,7 +73,7 @@ body {
 
 .card {
   padding: 20px;
-  background-color: #f5eeda;
+  background-color: #d3e7d1;
   border-radius: 5px;
   width: 190px;
   height: 320px;
@@ -110,9 +110,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: wheat;
+  color: white;
   text-align: center;
-  background-color: #e9b200; }
+  background-color: #419539; }
 
 .xfavorite {
   color: white;
@@ -134,23 +134,37 @@ body {
     border: 2px solid white;
     color: white;
     font-weight: 700;
-    background-color: #a98204;
+    background-color: #419539;
     display: inline-block;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
+    .resetbutton__btn:hover {
+      background-color: #003a12;
+      transform: scale(1.1, 1.1);
+      transition: transform 2s; }
+    .resetbutton__btn:not(:hover) {
+      transition: transform 2s; }
 
 .searchbtn {
   padding: 5px 10px 5px 10px;
   color: white;
-  background-color: #ad4601;
+  background-color: #003a12;
   border: 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-left: 13px; }
+  .searchbtn:hover {
+    background-color: #419539;
+    transform: scale(1.1, 1.1);
+    transition: transform 2s; }
+  .searchbtn:not(:hover) {
+    transition: transform 2s; }
 
 .collapsed {
   display: none; }
 
 .selected {
-  background-color: #a98204; }
+  background-color: #1d3a2a;
+  color: white; }
 
 :root {
   font-family: "Montserrat", sans-serif; }
