@@ -9,9 +9,7 @@ searchBtn.addEventListener('click', () => {
     renderAllCharacters(superfilter);
   }
   else if (userSearch) {
-    //variable para meter los personajes que coincidan con la busqueda
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
-    //pinta los personajes filtrados
     renderAllCharacters(filteredCharacters);
   }
   else if (searchStatusValue) {

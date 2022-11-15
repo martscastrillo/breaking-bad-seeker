@@ -4,6 +4,7 @@
 	gap: 70px 100px;
 	justify-content: center;
 	margin-bottom: 100px;
+
 	&__title {
 		text-transform: uppercase;
 		color: white;
@@ -13,12 +14,14 @@
 		background-color: $color-secondary;
 	}
 }
+
 .list {
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 30px;
 	width: 1100px;
+
 	&__fav {
 		width: 420px;
 		list-style: none;
@@ -38,6 +41,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
 	&__photobox {
 		border-radius: 5px;
 		overflow: hidden;
@@ -46,16 +50,19 @@
 		width: 150px;
 		align-self: center;
 	}
+
 	&__name {
 		font-size: 14px;
 		font-weight: 600;
 		text-align: center;
 	}
+
 	&__status {
 		font-size: 12px;
 		font-weight: 300;
 		text-align: center;
 	}
+
 	&__img {
 		align-self: center;
 		height: 100%;

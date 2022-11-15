@@ -20,18 +20,12 @@ let favoritesCharacters = [];
 
 
 function handleClick(event) {
-  //evento para concretamente que el currentTarget sobre donde está el evento,  en nuestro caso en cada tarjeta
   event.currentTarget.classList.toggle('selected');
-  //busca en el array aquel objeto que tiene el mismo char_id  que el id parseado del current Target
   const selectedCh = allCharacters.find((charac) => charac.char_id === parseInt(event.currentTarget.id));
-  //busqueda para saber la posicion en favoritos si la tarjeta está en favoritos
   const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
-  //si la busqueda es -1 es decir que no lo encuentra, entonces lo añade 
   if (characterInFavsIndex === -1) {
-    //rellena el array de favoritos con lo qhe ha encontrado
     favoritesCharacters.push(selectedCh);
   }
-  // si la busqueda da un index es que si lo encuentra y entonces, debe quitarlo
   else {
     favoritesCharacters.splice(characterInFavsIndex, 1);
   }
@@ -40,17 +34,12 @@ function handleClick(event) {
 }
 function renderOneCharacter(character) {
   let classSelected = '';
-  //busqueda para saber la posicion en favoritos si la tarjeta está en favoritos
   const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(character.char_id));
-  
-  //si la busqueda es -1 es decir que no lo encuentra, entonces lo añade 
   if (characterInFavsIndex === -1) {
     classSelected = '';
   }
-  // si la busqueda da un index es que si lo encuentra y entonces, debe quitarlo
   else {
     classSelected = 'selected';
-
   }
   let html = `<li>
       <article class="js_article ${classSelected} card" id="${character.char_id}"> 
@@ -69,7 +58,6 @@ function renderOneCharacter(character) {
 }
 
 function addCharacterListeners() {
-  //por ser un qSAll nos dá un array
   const allCards = document.querySelectorAll('.js_article');
   for (const eachCard of allCards) {
     eachCard.addEventListener('click', handleClick);
@@ -92,18 +80,18 @@ fetch('https://breakingbadapi.com/api/characters')
   });
 
 function renderfavoriteCh() {
-    let html = '';
-    for (const eachCharacter of favoritesCharacters) {
-        html += renderFAVCharacter(eachCharacter);
-    }
-    favoriteList.innerHTML = html;
-    const xfavorite = document.querySelectorAll('.js_x_favorite');
-    for (const onex of xfavorite) {
-        onex.addEventListener('click', handleClickCancellFav);
-    }
+  let html = '';
+  for (const eachCharacter of favoritesCharacters) {
+    html += renderFAVCharacter(eachCharacter);
+  }
+  favoriteList.innerHTML = html;
+  const xfavorite = document.querySelectorAll('.js_x_favorite');
+  for (const onex of xfavorite) {
+    onex.addEventListener('click', handleClickCancellFav);
+  }
 }
 function renderFAVCharacter(character) {
-    let html = `<li>
+  let html = `<li>
       <article class="selectedfav card" id="${character.char_id}"> 
       <p class="xfavorite js_x_favorite" id="${character.char_id}">X</p>
       <span class="card__photobox">
@@ -117,18 +105,17 @@ function renderFAVCharacter(character) {
           </div>
       </article>
       </li>`;
-    return html;
-  }
+  return html;
+}
 function handleClickCancellFav(event) {
-    event.preventDefault();
-    const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
-    favoritesCharacters.splice(characterInFavsIndex, 1);
-    renderfavoriteCh();
-    localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
-    let char_id = event.currentTarget.id;
-    const articles = document.getElementById(`${char_id}`);
-    articles.classList.remove('selected');
-
+  event.preventDefault();
+  const characterInFavsIndex = favoritesCharacters.findIndex((charac) => charac.char_id === parseInt(event.currentTarget.id));
+  favoritesCharacters.splice(characterInFavsIndex, 1);
+  renderfavoriteCh();
+  localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
+  let char_id = event.currentTarget.id;
+  const articles = document.getElementById(`${char_id}`);
+  articles.classList.remove('selected');
 }
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -141,9 +128,7 @@ searchBtn.addEventListener('click', () => {
     renderAllCharacters(superfilter);
   }
   else if (userSearch) {
-    //variable para meter los personajes que coincidan con la busqueda
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
-    //pinta los personajes filtrados
     renderAllCharacters(filteredCharacters);
   }
   else if (searchStatusValue) {
@@ -161,7 +146,6 @@ searchBtn.addEventListener('click', () => {
 })
 
 const savedFavorites = JSON.parse(localStorage.getItem('favoriteCharacter'));
-//despues de un get item hacemos un if para comprobar si hay o no algo en local storage
 if (savedFavorites !== null) {
   favoritesCharacters = savedFavorites;
   renderfavoriteCh();

@@ -6,6 +6,7 @@
 	margin-top: -16px;
 	margin-left: 155px;
 }
+
 .resetbutton {
 	height: 60px;
 	display: flex;
@@ -23,16 +24,19 @@
 		display: inline-block;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
+
 		&:hover {
-			background-color:$color-secondary;
+			background-color: $color-secondary;
 			transform: scale(1.1, 1.1);
 			transition: transform 2s;
-		  }
-		  &:not(:hover) {
+		}
+
+		&:not(:hover) {
 			transition: transform 2s;
-		  }
+		}
 	}
 }
+
 .searchbtn {
 	padding: 5px 10px 5px 10px;
 	color: white;
@@ -40,22 +44,27 @@
 	border: 0;
 	border-radius: 10px;
 	margin-left: 13px;
+
 	&:hover {
-		background-color:$color-footer;
+		background-color: $color-footer;
 		transform: scale(1.1, 1.1);
 		transition: transform 2s;
-	  }
-	  &:not(:hover) {
+	}
+
+	&:not(:hover) {
 		transition: transform 2s;
-	  }
+	}
 }
+
 .collapsed {
 	display: none;
 }
+
 .selected {
 	background-color: $color-selected-card;
 	color: white;
 }
+
 .selectedfav {
 	background-color: $color-favorite-card;
 	color: rgb(0, 0, 0);

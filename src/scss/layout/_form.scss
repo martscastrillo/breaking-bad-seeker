@@ -2,6 +2,7 @@
 	transform: translateY(-30px);
 	display: flex;
 	justify-content: center;
+
 	&__searchbox {
 		align-self: center;
 		border-radius: 5px;
@@ -18,9 +19,11 @@
 		justify-content: center;
 		align-items: center;
 		padding: 20px;
+
 		.fieldset {
 			border: transparent;
 		}
+
 		.inputSearch {
 			width: 400px;
 			border: solid 1px $color-secondary;
