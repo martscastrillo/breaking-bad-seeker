@@ -166,6 +166,10 @@ body {
   background-color: #248d55;
   color: white; }
 
+.selectedfav {
+  background-color: #bcda37;
+  color: white; }
+
 :root {
   font-family: "Montserrat", sans-serif; }
 
