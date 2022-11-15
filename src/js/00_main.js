@@ -8,7 +8,7 @@ const searchInput = document.querySelector('.js_search');
 const searchStatus = document.querySelector('.js_status');
 const form = document.querySelector('.js_form');
 const resetBtn = document.querySelector('.js_reset_btn');
-const searchMessage = document.querySelector('.js_search_message');
+
 
 //Variables
 
