@@ -20,18 +20,9 @@ function handleClickCancellFav(event) {
     localStorage.removeItem('favoriteCharacter');
     renderfavoriteCh();
     localStorage.setItem('favoriteCharacter', JSON.stringify(favoritesCharacters));
-    //////
-    console.log(parseInt(event.currentTarget.id));
-    const currentTargetId =allCharactersCard[parseInt(event.currentTarget.id)];
-    console.log(currentTargetId);
-  
-    //busqueda para saber la posicion en favoritos si la tarjeta está en favoritos
 
-    /*  if (event.currentTarget.id !== favsInAll) {
-         event.currentTarget.classList.remove('selected');
-     
- 
- 
-     }
-  */
+    let char_id = event.currentTarget.id;
+    const articles = document.getElementById(`${char_id}`);
+    articles.classList.remove('selected');
+
 }

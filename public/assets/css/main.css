@@ -58,11 +58,12 @@ body {
 
 .xfavorite {
   color: #ad4601;
-  font-weight: 600;
+  font-weight: 900;
   font-size: small;
   position: absolute;
-  margin-top: -16px;
-  margin-left: 155px; }
+  margin-top: -36px;
+  margin-left: 135px;
+  padding: 20px; }
 
 .formbox {
   transform: translateY(-30px);

@@ -4,16 +4,12 @@ form.addEventListener('submit', (event) => {
 searchBtn.addEventListener('click', () => {
   const userSearch = searchInput.value.toLowerCase();
   const searchStatusValue = searchStatus.value;
-
   if (userSearch && (searchStatusValue !== 'All')) {
-
     const superfilter = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch)).filter((eachCharacter) => eachCharacter.status.includes(searchStatusValue));
     renderAllCharacters(superfilter);
     console.log(superfilter);
   }
-
   else if (userSearch) {
-
     //variable para meter los personajes que coincidan con la busqueda
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
     //pinta los personajes filtrados

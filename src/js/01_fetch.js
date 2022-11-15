@@ -3,5 +3,4 @@ fetch('https://breakingbadapi.com/api/characters')
   .then((data) => {
     allCharacters = data;
     renderAllCharacters(allCharacters);
-
   });
