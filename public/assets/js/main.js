@@ -8,12 +8,14 @@ const searchInput = document.querySelector('.js_search');
 const searchStatus = document.querySelector('.js_status');
 const form = document.querySelector('.js_form');
 const resetBtn = document.querySelector('.js_reset_btn');
-
+const searchResult = document.querySelector('.js_search_result');
 
 //Variables
 
 let allCharacters = [];
 let favoritesCharacters = [];
+const arrayev = [2, 5, 9];
+let arrayLength = 0;
 
 
 
@@ -50,6 +52,7 @@ function renderOneCharacter(character) {
           </span>
           <div class ="text">
             <h3 class="card__name">${character.name}</h3>
+            <h3 class="card__name">${character.occupation}</h3>
             <h3 class="card__status">${character.status}</h3>
           </div>
       </article>
@@ -69,6 +72,9 @@ function renderAllCharacters(characters) {
     html += renderOneCharacter(eachCharacter);
   }
   characterList.innerHTML = html;
+  arrayLength = characters.length;
+  console.log(arrayLength);
+  searchResult.innerHTML = `Hay ${arrayLength} resultados de su búsqueda`;
   addCharacterListeners();
 }
 addCharacterListeners();
@@ -130,6 +136,7 @@ searchBtn.addEventListener('click', () => {
   else if (userSearch) {
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
     renderAllCharacters(filteredCharacters);
+
   }
   else if (searchStatusValue) {
     const filteredStatus = allCharacters.filter((eachCharacter) => {
@@ -162,4 +169,18 @@ resetBtn.addEventListener("click", (event) => {
 })
 
 
+
+function handelClickResult(){
+    console.log(arrayev);
+    for (const number of arrayev) {
+       if(number>arrayLength){
+        console.log(`El número de resultados es ${arrayLength} y es menor que ${number}.`);
+       }
+       else{
+        console.log(`El número de resultados es ${arrayLength} y es mayor que ${number}.`);
+       }
+    }
+}
+
+searchResult.addEventListener('click', handelClickResult)
 //# sourceMappingURL=main.js.map

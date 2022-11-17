@@ -29,6 +29,7 @@ function renderOneCharacter(character) {
           </span>
           <div class ="text">
             <h3 class="card__name">${character.name}</h3>
+            <h3 class="card__name">${character.occupation}</h3>
             <h3 class="card__status">${character.status}</h3>
           </div>
       </article>
@@ -48,6 +49,9 @@ function renderAllCharacters(characters) {
     html += renderOneCharacter(eachCharacter);
   }
   characterList.innerHTML = html;
+  arrayLength = characters.length;
+  console.log(arrayLength);
+  searchResult.innerHTML = `Hay ${arrayLength} resultados de su búsqueda`;
   addCharacterListeners();
 }
 addCharacterListeners();

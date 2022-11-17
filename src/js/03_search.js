@@ -11,6 +11,7 @@ searchBtn.addEventListener('click', () => {
   else if (userSearch) {
     const filteredCharacters = allCharacters.filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(userSearch));
     renderAllCharacters(filteredCharacters);
+
   }
   else if (searchStatusValue) {
     const filteredStatus = allCharacters.filter((eachCharacter) => {
