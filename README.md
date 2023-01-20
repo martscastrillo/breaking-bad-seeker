@@ -1,4 +1,6 @@
-# Breaking Bad Search Characters
+# Breaking Bad Search Characters 💉 🚌 🧪 
+<img width="936" alt="Captura de Pantalla 2023-01-20 a las 19 03 34" src="https://user-images.githubusercontent.com/112553001/213773964-0570b5a2-c1b9-4dd3-8cb3-2151d62ea1db.jpg">
+
 
 Este es un proyecto realizado para una evaluación en el módulo 2. Javascript dentro del Bootcamp de Adalab.
 
@@ -18,7 +20,7 @@ npm start
 
 Con este comando se podrá abrir la web del mismo modo que lo haría el Live Server (Go live) de VSCode.
 
-## Finalidad del proyecto
+## ⚠️ Finalidad del proyecto 
 
 El proyecto es un buscador de personajes de la serie Breaking Bad, está preparado para buscar mediante la barra de búsqueda, para de ese modo filtrar, después de haber filtrado el personaje que buscas puedes hacer click sobre el y se almacenará en el listado de favoritos, si haces click en él de nuevo lo eliminarás de la lista de favoritos.
 
@@ -26,7 +28,7 @@ Las búsquedas que puedes realizar pueden ser por nombre, buscando, por ejemplo 
 
 Puedes añadir todos los favoritos que quieras, y tantas veces como quieras, así como eliminarlos, bien pulsando sobre si mismo, en la sección de la derecha, mientras estás añadiendo personajes nuevos o bien cuando ya estás repasando todos tus favoritos y quieres explulsar a alguno de allí, podrás hacerlo pulsando en el aspa de la esquina superior derecha de la tarjeta. ¡Peeeeeero un momento! Para hacer tu vida más sencilla a la hora de eliminar los favoritos hemos incorporado un botón de RESET donde se borran todos los favoritos que tienes en tu listado. incluso la búsqueda que hayas escrito. ¡Fácil!
 
-## ¿Cúal ha sido el enfoque?
+## ‼️ ¿Cúal ha sido el enfoque? 
 
 El proyecto es una web donde mediante una peticion a un servidor obtenemos la informacion de los personajes de la serie Breaking Bad, el servidor nos ofrece multiples datos demiante arrays de objetos, con un personaje por objeto, de ahí tomamos los datos que nos interesan, en nuestro caso name, status e img.
 
@@ -70,3 +72,12 @@ El proyecto está preparado para poder trabajar con archivos de JS en partials, 
   Se genera dónde y qué vamos a guardar en localStorage, guardaremos en <strong>favoriteCharacter</strong> nuestra lista de favoritos dentro de la variable <strong>savedFavorites</strong>, le indicamos que pinte en localStorage lo que se encuentra en nuestro array de favoritos <strong>favoritesCharacters</strong>
 - **05_resetBtn.js**
   Por último, tenemos el evento click del botón reset, donde se vacía el array de favoritos <strong>favoritesCharacters</strong> así como el contenido de html del mismo, también se hace un reseteo del <strong>localStorage</strong> y del value de nuestro input de búsqueda.
+  
+Aquí tienes un ejemplo de manera rápida y sencilla de ver cómo funciona la página:
+
+<img width="1435" alt="Captura de Pantalla 2023-01-20 a las 19 03 12" src="https://user-images.githubusercontent.com/112553001/213775041-6264da5d-88e3-413e-9df3-939756cefd9e.png">
+
+<img width="1436" alt="Captura de Pantalla 2023-01-20 a las 19 03 34" src="https://user-images.githubusercontent.com/112553001/213774624-d3cbd824-51b2-4ecf-8a42-c7f69b421fba.png">
+
+
+
