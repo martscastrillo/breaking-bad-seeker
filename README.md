@@ -78,6 +78,9 @@ Aquí tienes un ejemplo de manera rápida y sencilla de ver cómo funciona la p�
 <img width="1435" alt="Captura de Pantalla 2023-01-20 a las 19 03 12" src="https://user-images.githubusercontent.com/112553001/213775041-6264da5d-88e3-413e-9df3-939756cefd9e.png">
 
 <img width="1436" alt="Captura de Pantalla 2023-01-20 a las 19 03 34" src="https://user-images.githubusercontent.com/112553001/213774624-d3cbd824-51b2-4ecf-8a42-c7f69b421fba.png">
+<div style="display:flex;">
+<img width="389" alt="Captura de Pantalla 2023-05-05 a las 12 07 56" src="https://user-images.githubusercontent.com/112553001/236430816-1f4cafbd-e363-4c7b-8287-deb06d143ae7.png">
+<img width="392" alt="Captura de Pantalla 2023-05-05 a las 12 08 05" src="https://user-images.githubusercontent.com/112553001/236430827-583d60b4-8ca9-4f87-8c65-269d1cb18c87.png"> <div/>
 
 
 
