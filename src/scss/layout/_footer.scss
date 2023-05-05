@@ -10,4 +10,10 @@
   color: rgb(255, 255, 255);
   text-align: center;
   background-color: $color-footer;
+  span{
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: inline;
+		}
+  }
 }
