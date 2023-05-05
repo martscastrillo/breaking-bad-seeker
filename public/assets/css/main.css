@@ -204,8 +204,8 @@ body {
   @media screen and (min-width: 768px) {
     .xfavorite {
       display: inline;
-      margin-top: -280px;
-      margin-left: 140px;
+      margin-top: -290px;
+      margin-left: 148px;
       font-size: medium;
       width: 20px;
       height: 20px; } }
