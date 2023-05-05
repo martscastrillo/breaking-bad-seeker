@@ -45,13 +45,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; }
+    padding: 10px; }
     @media screen and (min-width: 768px) {
       .formbox__searchbox {
         margin: 0px 30px 30px 30px;
         flex-direction: column;
         width: 650px;
-        height: 60px; } }
+        height: 60px;
+        padding: 20px; } }
     .formbox__searchbox .fieldset {
       border: transparent; }
     .formbox__searchbox .inputSearch {
