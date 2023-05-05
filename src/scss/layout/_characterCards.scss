@@ -5,6 +5,7 @@
 	justify-content: center;
 	margin-bottom: 100px;
 
+
 	&__title {
 		text-transform: uppercase;
 		color: white;
@@ -22,8 +23,8 @@
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
-	width: 200px;
+	gap: 10px;
+	width: fit-content;
 	@media screen and (min-width: 768px) {
 		grid-template-columns: repeat(5, 1fr);
 		width: 1100px;
@@ -31,11 +32,12 @@
 	}
 
 	&__fav {
-		width: 220px;
+		width: fit-content;
 		list-style: none;
 		grid-template-columns: 1fr 1fr;
 		display: grid;
-		gap: 20px;
+
+		gap: 10px;
 		@media screen and (min-width: 768px) {
 			width: 420px;
 			gap: 30px;
@@ -44,50 +46,62 @@
 }
 
 .card {
-	padding: 20px;
+	padding: 5px;
 	background-color: $color-card-background;
 	border-radius: 5px;
 	width: 90px;
-	height: 170px;
+	height: 140px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 	@media screen and (min-width: 768px) {
+		padding: 20px;
 		width: 190px;
 		height: 320px;
 	}
 
 	&__photobox {
-		border-radius: 5px;
+	
 		overflow: hidden;
 		object-fit: cover;
 		height: 140px;
-		width: 50px;
+		width: 75px;
 		align-self: center;
+		
 		@media screen and (min-width: 768px) {
 			height: 220px;
 		width: 150px;
+		border-radius: 5px;
 		}
 	}
 
 	&__name {
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: 600;
 		text-align: center;
+	
+		
 		@media screen and (min-width: 768px) {
 			font-size: 14px;
+			height: fit-content;
 		}
 	}
 
 	&__status {
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: 300;
 		text-align: center;
+			
+		@media screen and (min-width: 768px) {
+			font-size: 12px;
+			height: fit-content;
+		}
 	}
 
 	&__img {
 		align-self: center;
-		height: 100%;
+		height: 100px;
+		border-radius: 5px;
 	}
 }

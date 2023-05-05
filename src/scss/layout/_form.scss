@@ -34,7 +34,8 @@
 		}
 
 		.inputSearch {
-			width: 100;
+			width: 120px;
+			
 			border: solid 1px $color-secondary;
 			@media screen and (min-width: 768px) {
 				flex-direction: column;
