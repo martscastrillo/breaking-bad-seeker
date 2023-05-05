@@ -79,6 +79,12 @@ body {
     .superbigbox {
       gap: 70px 100px; } }
 
+.titlefav {
+  width: 190px; }
+  @media screen and (min-width: 768px) {
+    .titlefav {
+      width: 420px; } }
+
 .list {
   list-style: none;
   display: grid;
