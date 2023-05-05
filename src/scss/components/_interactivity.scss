@@ -1,10 +1,10 @@
 .xfavorite {
 	color: white;
 	font-weight: 600;
-	font-size: small;
+	font-size: 12px;
 	position: absolute;
 	margin-top: -120px;
-	margin-left: 65px;
+	margin-left: 68px;
 	background-color: $color-secondary;
 	text-align: center;
 	border-radius: 50%;
@@ -12,6 +12,11 @@
 	height: 15px;
 	@media screen and (min-width: 768px) {
 		display: inline;
+		margin-top: -280px;
+		margin-left: 140px;
+		font-size: medium;
+		width: 20px;
+		height: 20px;
 		  }
 }
 
@@ -23,7 +28,7 @@
 
 	&__btn {
 		text-transform: uppercase;
-		font-size: medium;
+		font-size: 12px;
 		padding: 10px 10px 10px 10px;
 		border: 2px solid rgb(255, 255, 255);
 		color: white;
@@ -32,7 +37,9 @@
 		display: inline-block;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
-
+		@media screen and (min-width: 768px) {
+			font-size: medium;
+			  }
 		&:hover {
 			background-color: $color-secondary;
 			transform: scale(1.1, 1.1);

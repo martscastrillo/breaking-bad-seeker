@@ -117,6 +117,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); }
   @media screen and (min-width: 768px) {
     .card {
+      gap: 20px;
       padding: 20px;
       width: 190px;
       height: 320px; } }
@@ -156,6 +157,9 @@ body {
     align-self: center;
     height: 100px;
     border-radius: 5px; }
+    @media screen and (min-width: 768px) {
+      .card__img {
+        height: 100%; } }
 
 .footer {
   position: fixed;
@@ -178,10 +182,10 @@ body {
 .xfavorite {
   color: white;
   font-weight: 600;
-  font-size: small;
+  font-size: 12px;
   position: absolute;
   margin-top: -120px;
-  margin-left: 65px;
+  margin-left: 68px;
   background-color: #336c2a;
   text-align: center;
   border-radius: 50%;
@@ -189,7 +193,12 @@ body {
   height: 15px; }
   @media screen and (min-width: 768px) {
     .xfavorite {
-      display: inline; } }
+      display: inline;
+      margin-top: -280px;
+      margin-left: 140px;
+      font-size: medium;
+      width: 20px;
+      height: 20px; } }
 
 .resetbutton {
   height: 60px;
@@ -198,7 +207,7 @@ body {
   align-items: center; }
   .resetbutton__btn {
     text-transform: uppercase;
-    font-size: medium;
+    font-size: 12px;
     padding: 10px 10px 10px 10px;
     border: 2px solid white;
     color: white;
@@ -207,6 +216,9 @@ body {
     display: inline-block;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
+    @media screen and (min-width: 768px) {
+      .resetbutton__btn {
+        font-size: medium; } }
     .resetbutton__btn:hover {
       background-color: #336c2a;
       transform: scale(1.1, 1.1);
