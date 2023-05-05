@@ -13,10 +13,13 @@ body {
   flex-direction: column; }
 
 .headerbox {
-  height: 420px;
+  height: 320px;
   background-image: url("../images/backimage.jpg");
   background-position: center;
   background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .headerbox {
+      height: 420px; } }
 
 .formbox {
   transform: translateY(-30px);
@@ -66,7 +69,7 @@ body {
 .superbigbox {
   display: flex;
   flex-direction: row;
-  gap: 30px 10px;
+  gap: 30px 8px;
   justify-content: center;
   margin-bottom: 100px; }
   .superbigbox__title {
@@ -90,7 +93,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 8px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
@@ -106,7 +109,7 @@ body {
     list-style: none;
     grid-template-columns: 1fr 1fr;
     display: grid;
-    gap: 10px; }
+    gap: 8px; }
     @media screen and (min-width: 768px) {
       .list__fav {
         width: 420px;
@@ -208,15 +211,20 @@ body {
       height: 20px; } }
 
 .resetbutton {
-  height: 60px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: -20px; }
+  @media screen and (min-width: 768px) {
+    .resetbutton {
+      height: 60px;
+      margin-bottom: 0px; } }
   .resetbutton__btn {
     text-transform: uppercase;
-    font-size: 12px;
-    padding: 10px 10px 10px 10px;
-    border: 2px solid white;
+    font-size: 10px;
+    padding: 8px;
+    border: 1px solid white;
     color: white;
     font-weight: 700;
     background-color: #419539;
@@ -225,7 +233,9 @@ body {
     border-radius: 10px; }
     @media screen and (min-width: 768px) {
       .resetbutton__btn {
-        font-size: medium; } }
+        padding: 10px;
+        font-size: 14px;
+        border: 2px solid white; } }
     .resetbutton__btn:hover {
       background-color: #336c2a;
       transform: scale(1.1, 1.1);

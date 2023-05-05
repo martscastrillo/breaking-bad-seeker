@@ -21,16 +21,20 @@
 }
 
 .resetbutton {
-	height: 60px;
+	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	margin-bottom: -20px;
+	@media screen and (min-width: 768px) {
+		height: 60px;
+		margin-bottom: 0px;
+		  }
 	&__btn {
 		text-transform: uppercase;
-		font-size: 12px;
-		padding: 10px 10px 10px 10px;
-		border: 2px solid rgb(255, 255, 255);
+		font-size: 10px;
+		padding: 8px;
+		border: 1px solid rgb(255, 255, 255);
 		color: white;
 		font-weight: 700;
 		background-color: $color-footer;
@@ -38,7 +42,9 @@
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
 		@media screen and (min-width: 768px) {
-			font-size: medium;
+			padding: 10px;
+			font-size: 14px;
+			border: 2px solid rgb(255, 255, 255);
 			  }
 		&:hover {
 			background-color: $color-secondary;

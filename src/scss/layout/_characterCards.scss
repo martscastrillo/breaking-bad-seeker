@@ -1,7 +1,7 @@
 .superbigbox {
 	display: flex;
 	flex-direction: row;
-	gap: 30px 10px;
+	gap: 30px 8px;
 	justify-content: center;
 	margin-bottom: 100px;
 
@@ -30,7 +30,7 @@
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 10px;
+	gap: 8px;
 	width: fit-content;
 	@media screen and (min-width: 768px) {
 		grid-template-columns: repeat(5, 1fr);
@@ -44,7 +44,7 @@
 		grid-template-columns: 1fr 1fr;
 		display: grid;
 
-		gap: 10px;
+		gap: 8px;
 		@media screen and (min-width: 768px) {
 			width: 420px;
 			gap: 30px;
